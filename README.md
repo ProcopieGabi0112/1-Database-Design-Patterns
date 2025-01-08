@@ -34,7 +34,7 @@ Database Design Patterns - database design pattern of all types of databases
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
