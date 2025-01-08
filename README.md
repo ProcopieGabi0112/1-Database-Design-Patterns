@@ -5,7 +5,7 @@
 [![Unlicense License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# 1.-Database-Design-Patterns
+# 1-Database-Design-Patterns
 Database Design Patterns - database design pattern of all types of databases
 # Ebooking
 
