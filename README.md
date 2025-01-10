@@ -7,7 +7,7 @@
 
 <div align="left">
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo.png" alt="Logo" width="210" height="120">
+    <img src="images/logo.png" alt="Logo" width="210" height="100">
   </a>
   
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
