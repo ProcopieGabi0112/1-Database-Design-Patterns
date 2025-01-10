@@ -16,7 +16,7 @@ Here you can find all types of Oracle Database ideas you ever dream of. Use the 
 
 ### Oracle Database Versions
 
-- [1] 1. Oracle 19c, version 19c.3000
+- [1] Oracle 19c, version 19c.3000
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
