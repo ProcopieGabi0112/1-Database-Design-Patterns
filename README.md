@@ -7,6 +7,7 @@
 
 # 1-Database-Design-Patterns
 Database Design Patterns - database design pattern of all types of databases
+
 <div align="center">
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
