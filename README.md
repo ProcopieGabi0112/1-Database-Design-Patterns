@@ -7,10 +7,10 @@
 <hr>
 
 # 1-Database-Design-Patterns
- 
+
 <!-- ABOUT THE PROJECT -->
 ### About The Project
-
+<a id="readme-top"></a>
 This is a repository project that we can find all database design you need. Maybe sometime in your life you need a database template of a business and you dont know where to start. From now you can come here and download your template from here. I think this is it your solution. Use the `README.md` to get started.
 
 ### Built With
@@ -38,11 +38,12 @@ As a person who has been working in the IT field since a young age, I believe th
 
 Above you can select the type of database system. By accessing the respective folder, you will find other folders with specific names that will guide you to the desired example.
 
-### Installation
+## Installation
 
 After choosing the type of system you will find a folder called ``install_pref_vers`` where you will find steps for installing each version of the database system you are looking for.
 If you want to add other versions, don't hesitate to contact me.
-<!-- ROADMAP -->
+
+
 ## Roadmap
 
 In order to understand exactly what the study of a database system consists of, we will present below the steps we consider necessary to deepen the design you are looking for.
@@ -60,12 +61,6 @@ In order to understand exactly what the study of a database system consists of, 
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -74,15 +69,9 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ### Top contributors:
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
+<a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
 </a>
 
