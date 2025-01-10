@@ -4,7 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![Unlicense License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-<hr>
+
 <a id="readme-top"></a>
 
 # 1-Database-Design-Patterns
@@ -33,6 +33,7 @@ As a person who has been working in the IT field since a young age, I believe th
     <img src="images/logo_3.png" alt="Logo" width="90" height="90">
   </a>
 </div>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -43,6 +44,7 @@ Above you can select the type of database system. By accessing the respective fo
 
 After choosing the type of system you will find a folder called ``install_pref_vers`` where you will find steps for installing each version of the database system you are looking for.
 If you want to add other versions, don't hesitate to contact me.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## Roadmap
@@ -55,7 +57,7 @@ In order to understand exactly what the study of a database system consists of, 
     - [ ] dependencies between tables
     - [ ] the final structure of the tables that we will have to make in the database
     - [ ] design tools for database schema
-- [x] Add back to top links
+- [x] To be added
 - [ ] Add Additional Templates w/ Examples
 - [ ] Add "components" document to easily copy & paste sections of the readme
 - [ ] Multi-language Support
