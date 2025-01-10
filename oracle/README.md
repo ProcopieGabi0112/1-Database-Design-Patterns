@@ -26,51 +26,7 @@ Here you can find all types of Oracle Database ideas you ever dream of. Use the 
 
 Above you can select the type of database system. By accessing the respective folder, you will find other folders with specific names that will guide you to the desired example.
 
-## Installation
 
-After choosing the type of system you will find a folder called ``install_pref_vers`` where you will find steps for installing each version of the database system you are looking for.
-If you want to add other versions, don't hesitate to contact me.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Roadmap
-
-In order to understand exactly what the study of a database system consists of, we will present below the steps we consider necessary to deepen the design you are looking for.
-
-- [x] 1. Design Patterns of Databases Course
-     - [ ] design schemas of a database.
-     - [ ] structure of tables.
-     - [ ] dependencies between tables.
-     - [ ] the final structure of the tables that we will have to make in the database.
-     - [ ] design tools for database schema.
-- [x] DDL Course (Data Definition Language)
-     - [ ] create tables
-     - [ ] create ``bonds`` between tables.
-     - [ ] CREATE/ALTER/DROP/TRUNCATE
-- [x] DML Course (Data Manipulation Language)
-     - [ ] learn how to create data that will be inserted into your tables.
-     - [ ] learn how to import or export data from table using IDE or syntax.
-     - [ ] INSERT/UPDATE/DELETE 
-- [x] DCL & TCL Course (Data Control Language / Transaction Control Language)
-     - [ ] learn how to create your database users.
-     - [ ] learn how to grant them the rights to access your data.
-     - [ ] learn how to save the last session you worked on.
-     - [ ] GRANT/REVOKE/COMMIT/ROLLBACK/SAVEPOINT
-- [x] DQL Cource (Data Query Language)
-     - [ ] task_1
-     - [ ] task_2
-- [x] DQL Cource (Data Query Language)
-     - [ ] task_1
-- [x] Data Warehouse Arhitecture Course
-     - [ ] task_1
-- [x] Distributed Database System Course
-     - [ ] task_1
-- [x] Cloud Database System Course
-     - [ ] task_1
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
