@@ -65,14 +65,22 @@ In order to understand exactly what the study of a database system consists of, 
      - [ ] learn how to create data that will be inserted into your tables.
      - [ ] learn how to import or export data from table using IDE or syntax.
      - [ ] INSERT/UPDATE/DELETE 
-- [ ] DCL & TCL Course (Data Control Language / Transaction Control Language)
+- [x] DCL & TCL Course (Data Control Language / Transaction Control Language)
      - [ ] learn how to create your database users.
      - [ ] learn how to grant them the rights to access your data.
      - [ ] learn how to save the last session you worked on.
      - [ ] GRANT/REVOKE/COMMIT/ROLLBACK/SAVEPOINT
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] DQL Cource (Data Query Language)
+     - [ ] task_1
+     - [ ] task_2
+- [x] DQL Cource (Data Query Language)
+     - [ ] task_1
+- [x] Data Warehouse Arhitecture Course
+     - [ ] task_1
+- [x] Distributed Database System Course
+     - [ ] task_1
+- [x] Cloud Database System Course
+     - [ ] task_1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
