@@ -61,6 +61,8 @@ In order to understand exactly what the study of a database system consists of, 
     - [ ] Chinese
     - [ ] Spanish
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -69,20 +71,20 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### Top contributors:
 
 <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
 </a>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LICENSE -->
 ## License
 
 Distributed under the Unlicense License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
@@ -90,6 +92,8 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
