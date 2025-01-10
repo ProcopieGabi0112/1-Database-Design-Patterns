@@ -11,10 +11,10 @@
   </a>
   
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_1.png" alt="Logo" width="80" height="120">
+    <img src="images/logo_1.png" alt="Logo" width="120" height="120">
   </a>
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_2.png" alt="Logo" width="80" height="120">
+    <img src="images/logo_2.png" alt="Logo" width="120" height="120">
   </a>
 </div>
 
