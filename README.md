@@ -70,16 +70,14 @@ In order to understand exactly what the study of a database system consists of, 
      - [ ] learn how to grant them the rights to access your data.
      - [ ] learn how to save the last session you worked on.
      - [ ] GRANT/REVOKE/COMMIT/ROLLBACK/SAVEPOINT
-- [x] 5. DQL Cource (Data Query Language)
+- [x] 5. DQL Course (Data Query Language)
      - [ ] task_1
      - [ ] task_2
-- [x] 6. DQL Cource (Data Query Language)
+- [x] 6. Data Warehouse Arhitecture Course
      - [ ] task_1
-- [x] 7. Data Warehouse Arhitecture Course
+- [x] 7. Distributed Database System Course
      - [ ] task_1
-- [x] 8. Distributed Database System Course
-     - [ ] task_1
-- [x] 9. Cloud Database System Course
+- [x] 8. Cloud Database System Course
      - [ ] task_1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
