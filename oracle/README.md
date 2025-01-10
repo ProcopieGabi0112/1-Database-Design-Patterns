@@ -7,7 +7,7 @@
 
 <a id="readme-top"></a>
 
-# 1-Database-Design-Patterns
+# 1-Oracle Database
 
 <!-- ABOUT THE PROJECT -->
 ### About The Project
