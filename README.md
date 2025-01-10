@@ -7,14 +7,14 @@
 
 <div align="left">
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo.png" alt="Logo" width="120" height="120">
+    <img src="images/logo.png" alt="Logo" width="150" height="150">
   </a>
   
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_1.png" alt="Logo" width="120" height="120">
+    <img src="images/logo_1.png" alt="Logo" width="150" height="150">
   </a>
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_2.png" alt="Logo" width="120" height="120">
+    <img src="images/logo_2.png" alt="Logo" width="150" height="150">
   </a>
 </div>
 
