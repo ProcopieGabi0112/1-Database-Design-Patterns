@@ -5,41 +5,15 @@
 [![Unlicense License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# 1-Database-Design-Patterns
-Database Design Patterns - database design pattern of all types of databases
-
-<!-- icon .png
-<div align="center">
+<div align="left">
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 </div>
--->
 
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
-
-<!-- PROJECT LOGO -->
-
-<div align="center">
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
-
-
+# 1-Database-Design-Patterns
+Database Design Patterns - database design pattern of all types of databases
+ 
 
 <!-- TABLE OF CONTENTS -->
 <details>
