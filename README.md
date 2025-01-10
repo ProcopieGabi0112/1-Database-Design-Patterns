@@ -51,15 +51,25 @@ If you want to add other versions, don't hesitate to contact me.
 
 In order to understand exactly what the study of a database system consists of, we will present below the steps we consider necessary to deepen the design you are looking for.
 
-- [x] Design Patterns of Databases Course
-    - [ ] design schemas of a database
-    - [ ] structure of tables
-    - [ ] dependencies between tables
-    - [ ] the final structure of the tables that we will have to make in the database
-    - [ ] design tools for database schema
-- [x] To be added
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [x] 1. Design Patterns of Databases Course
+     - [ ] design schemas of a database.
+     - [ ] structure of tables.
+     - [ ] dependencies between tables.
+     - [ ] the final structure of the tables that we will have to make in the database.
+     - [ ] design tools for database schema.
+- [x] DDL Course (Data Definition Language)
+     - [ ] create tables
+     - [ ] create ``bonds`` between tables.
+     - [ ] CREATE/ALTER/DROP/TRUNCATE
+- [x] DML Course (Data Manipulation Language)
+     - [ ] learn how to create data that will be inserted into your tables.
+     - [ ] learn how to import or export data from table using IDE or syntax.
+     - [ ] INSERT/UPDATE/DELETE 
+- [ ] DCL & TCL Course (Data Control Language / Transaction Control Language)
+     - [ ] learn how to create your database users.
+     - [ ] learn how to grant them the rights to access your data.
+     - [ ] learn how to save the last session you worked on.
+     - [ ] GRANT/REVOKE/COMMIT/ROLLBACK/SAVEPOINT
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
@@ -90,10 +100,10 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - Procopie Gabi - procopiegabi@gmail.com
+Procopie Gabi - procopiegabi@gmail.com
 
 Project Link: 
-[[https://github.com/ProcopieGabi0112/1-Database-Design-Patterns](https://github.com/ProcopieGabi0112/1-Database-Design-Patterns)](https://github.com/ProcopieGabi0112/1-Database-Design-Patterns)
+[[https://github.com/ProcopieGabi0112/1-Database-Design-Patterns](https://github.com/ProcopieGabi0112/1-Database-Design-Patterns)]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
