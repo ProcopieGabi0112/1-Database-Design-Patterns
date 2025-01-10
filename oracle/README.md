@@ -12,27 +12,13 @@
 <!-- ABOUT THE PROJECT -->
 ### About The Project
 
-This is a repository project that we can find all database design you need. Maybe sometime in your life you need a database template of a business and you dont know where to start. From now you can come here and download your template from here. I think this is it your solution. Use the `README.md` to get started.
+Here you can find all types of Oracle Database ideas you ever dream of. Use the `README.md` to get started.
 
-### Built With
-As a person who has been working in the IT field since a young age, I believe that there is a limited number of types of database management systems that you should study to be able to say that you can handle any other existing database management system.
+### Oracle Database Versions
 
-<div align="left">
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo.png" alt="Logo" width="90" height="90">
-  </a>
-  
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_1.png" alt="Logo" width="90" height="90">
-  </a>
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_2.png" alt="Logo" width="90" height="90">
-  </a>
-  </a>
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_3.png" alt="Logo" width="90" height="90">
-  </a>
-</div>
+- [1] 1. Oracle 19c, version 19c.3000
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
