@@ -4,62 +4,34 @@
 [![Issues][issues-shield]][issues-url]
 [![Unlicense License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-<div align="left">
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo.png" alt="Logo" width="160" height="150">
-  </a>
-  
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_1.png" alt="Logo" width="150" height="150">
-  </a>
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_2.png" alt="Logo" width="150" height="150">
-  </a>
-  </a>
-  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
-    <img src="images/logo_3.png" alt="Logo" width="150" height="150">
-  </a>
-</div>
+<hr>
 
 # 1-Database-Design-Patterns
  
 <!-- ABOUT THE PROJECT -->
 ### About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+This is a repository project that we can find all database design you need. Maybe sometime in your life you need a database template of a business and you dont know where to start. From now you can come here and download your template from here. I think this is it your solution. Use the `README.md` to get started.
 
 ### Built With
+As a person who has been working in the IT field since a young age, I believe that there is a limited number of types of database management systems that you should study to be able to say that you can handle any other existing database management system.
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<div align="left">
+  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
+    <img src="images/logo.png" alt="Logo" width="90" height="90">
+  </a>
+  
+  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
+    <img src="images/logo_1.png" alt="Logo" width="90" height="90">
+  </a>
+  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
+    <img src="images/logo_2.png" alt="Logo" width="90" height="90">
+  </a>
+  </a>
+  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
+    <img src="images/logo_3.png" alt="Logo" width="90" height="90">
+  </a>
+</div>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -207,8 +179,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
