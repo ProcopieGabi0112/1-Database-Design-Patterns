@@ -16,6 +16,10 @@
   <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
     <img src="images/logo_2.png" alt="Logo" width="150" height="150">
   </a>
+  </a>
+  <a href="https://github.com/ProcopieGabi0112/1-Database-Design-Patterns/">
+    <img src="images/logo_3.png" alt="Logo" width="150" height="150">
+  </a>
 </div>
 
 
