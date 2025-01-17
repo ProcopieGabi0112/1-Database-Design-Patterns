@@ -1,13 +1,6 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![Unlicense License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <a id="readme-top"></a>
 
-# 1-Database-Design-Patterns
+# 1-Design Patter of Database
 
 <!-- ABOUT THE PROJECT -->
 ### About The Project
