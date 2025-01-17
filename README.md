@@ -64,20 +64,23 @@ In order to understand exactly what the study of a database system consists of, 
 - [x] 3. DML Course (Data Manipulation Language)
      - [ ] learn how to create data that will be inserted into your tables.
      - [ ] learn how to import or export data from table using IDE or syntax.
-     - [ ] INSERT/UPDATE/DELETE 
-- [x] 4. DCL & TCL Course (Data Control Language / Transaction Control Language)
+     - [ ] INSERT/UPDATE/DELETE
+- [x] 4. DQL Course (Data Query Language)
+     - [ ] task_1
+     - [ ] task_2     
+- [x] 5. DPL Course (Data Processing Language)
+     - [ ] Triggeri
+     - [ ] Functii/Proceduri          
+- [x] 6. DCL & TCL Course (Data Control Language / Transaction Control Language)
      - [ ] learn how to create your database users.
      - [ ] learn how to grant them the rights to access your data.
      - [ ] learn how to save the last session you worked on.
      - [ ] GRANT/REVOKE/COMMIT/ROLLBACK/SAVEPOINT
-- [x] 5. DQL Course (Data Query Language)
+- [x] 7. Data Warehouse Arhitecture Course
      - [ ] task_1
-     - [ ] task_2
-- [x] 6. Data Warehouse Arhitecture Course
+- [x] 8. Distributed Database System Course
      - [ ] task_1
-- [x] 7. Distributed Database System Course
-     - [ ] task_1
-- [x] 8. Cloud Database System Course
+- [x] 9. Cloud Database System Course
      - [ ] task_1
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
