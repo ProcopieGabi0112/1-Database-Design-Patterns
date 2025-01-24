@@ -110,4 +110,19 @@ This is the password of your sys admin account that you will be using to create 
      Pluggable database name: orclpdb
 ```
 
-Click on `Next`.
+Click on `Next`. After this you will have to wait for your database software to be installed.
+
+### 🔽 Step 3. Check if everything is up and running
+```
+✅ Enter on the next url to see if your database dashboard is up and running. In all the cases if this is working all should be fine.
+The link is "https://localhost:5501/em". This site will be seen as dangerous but u can procced to the next step. After you enter on the site you can find some interesting info about your database.
+```
+```
+✅ Check in your Sql Developer if everything it's ok.
+    Username: sys
+    Password: Password#534545234
+    Role: SYSDBA
+    Hostname: localhost
+    Port: 1521
+    SID: orcl
+```
