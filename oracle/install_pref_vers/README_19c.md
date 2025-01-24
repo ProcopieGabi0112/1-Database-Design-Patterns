@@ -37,15 +37,15 @@ In order to ensure that your database will be installed fine, you have to follow
      - [ ] After the extraction of all file you must enter in the folder extracted from .zip file and search for setup.exe file. This file must be the last from that folder.
      - [ ] Right-click on him. Run as administrator and the installation must start.
 - [x] Step 2. Installation of database software
-     - [ ] Select any of the following install options.
+    
+### 1. Select any of the following install options.
 ```
 ✅ Create amd configure a single instance database. This option creates a starter database.
 ```
 ```
 ⚠️ Set Up Software Only 
 ```   
-   - [ ] Select the system where you will install your database.
-
+### 2. Select the system where you will install your database.
 ```
 ✅ Desktop class
     Choose this option if you are installing on a laptop  or desktop class system. This option includes a starter database and allows minimal configuration. 
