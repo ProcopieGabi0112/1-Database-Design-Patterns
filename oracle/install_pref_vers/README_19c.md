@@ -44,6 +44,16 @@ In order to ensure that your database will be installed fine, you have to follow
 ```
 ```
 ⚠️ Set Up Software Only 
+```
+Click on "ext"
+#### 🔽 Step 2.2. Select the system where you will install your database. 
+```
+✅ Desktop class
+   Choose this option if you are installing on a laptop  or desktop class system. This option includes a starter database and allows minimal configuration. 
+```
+```
+⚠️ Server class
+    Choose this option if you are installing on a server class system, which Oracle defines as a system used in a production data center. This option allows for more advanced configuration options. 
 ```   
 #### 🔽 Step 2.2. Select the system where you will install your database. 
 ```
@@ -54,5 +64,4 @@ In order to ensure that your database will be installed fine, you have to follow
 ⚠️ Server class
     Choose this option if you are installing on a server class system, which Oracle defines as a system used in a production data center. This option allows for more advanced configuration options. 
 ```   
-
     
