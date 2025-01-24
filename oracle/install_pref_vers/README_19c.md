@@ -45,7 +45,8 @@ In order to ensure that your database will be installed fine, you have to follow
 ```
 ⚠️ Set Up Software Only 
 ```
-Click on "ext"
+Click on `Next`.
+
 #### 🔽 Step 2.2. Select the system where you will install your database. 
 ```
 ✅ Desktop class
@@ -54,14 +55,59 @@ Click on "ext"
 ```
 ⚠️ Server class
     Choose this option if you are installing on a server class system, which Oracle defines as a system used in a production data center. This option allows for more advanced configuration options. 
+```
+Click on `Next`.
+
+#### 🔽 Step 2.3. For enhanced security, you may choose  to run Windows Services  from this Oracle home  with a non-adminstrator account. Oracle recommends that you choose a Virtual Account or specify a standard Windows User Account for this purpose. 
+```
+⚠️ Use Virtual Account
+```
+```
+⚠️ User Existing Windows User
+    User Name:
+    Password: 
 ```   
-#### 🔽 Step 2.2. Select the system where you will install your database. 
 ```
-✅ Desktop class
-   Choose this option if you are installing on a laptop  or desktop class system. This option includes a starter database and allows minimal configuration. 
+✅ Create New Windows User
+    User Name: oracle
+    Password:  oracledb
+    Confirm Password: oracledb
+The newly created user is denied Windows logon privileges.
 ```
 ```
-⚠️ Server class
-    Choose this option if you are installing on a server class system, which Oracle defines as a system used in a production data center. This option allows for more advanced configuration options. 
+⚠️ Use Windows Built-in Account
+```       
+Click on `Next`.
+
+#### 🔽 Step 2.4. Perform full database installation with basic configuration. 
+```
+✅ Oracle base: "C:\oracle19c"
+Here pay attention on this name oracle19c. I put another name like Oracle19c or oracle_19c and the installation was not succedded. I was sure about that because i realised on a step that my oracle db linister wasn't working properly.
+```
+```
+✅ Software location: "location of your unzipped file of the database".
 ```   
-    
+```
+✅ Dabase file location: "C:\oracle19c\oradata"
+Here you will find the files save in your database.
+```
+```
+✅ Database edition: Enterprise Edition
+```
+```
+✅ Character set: Unicode (AL32UTF8)
+```
+```
+✅ Global database name: orcl
+This is the name of the CDB that u will install.
+```
+```
+✅ Password: Password#534545234
+This is the password of your sys admin account that you will be using to create all that you need
+```
+```
+✅  [x] Create as Container database
+     Pluggable database name: orclpdb
+```
+
+Click on `Next`.
