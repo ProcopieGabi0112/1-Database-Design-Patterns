@@ -38,23 +38,20 @@ In order to ensure that your database will be installed fine, you have to follow
      - [ ] Right-click on him. Run as administrator and the installation must start.
 - [x] Step 2. Installation of database software
      - [ ] Select any of the following install options.
-
-⚠️More option above. You will find the best option but other  [+option+] / [-options-] may offer you something that you need ⚠️
 ```
 ✅ Create amd configure a single instance database. This option creates a starter database.
 ```
 ```
-❎ Set Up Software Only 
+⚠️ Set Up Software Only 
 ```   
    - [ ] Select the system where you will install your database.
 
-⚠️More option above. You will find the best option but other  [+option+] / [-options-] may offer you something that you need ⚠️
 ```
 ✅ Desktop class
     Choose this option if you are installing on a laptop  or desktop class system. This option includes a starter database and allows minimal configuration. 
 ```
 ```
-❎ Server class
+⚠️ Server class
     Choose this option if you are installing on a server class system, which Oracle defines as a system used in a production data center. This option allows for more advanced configuration options. 
 ```   
 
