@@ -38,33 +38,29 @@ This diagram is made to detect which are the main tables that you will have in t
       
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Step 1. Entity - Relation Diagram
+### Step 2. Conceptual Schema
 
-This diagram is made to detect which are the main tables that you will have in the database. Also in this scheme we will identify the bond between entities (tables) and the important attributes that we will find in each table.
+In this diagram we will transform the relationships we have just defined in the scheme. Depending on the relationships that we will transform, we will also introduce foreign keys into the tables.
 
-- [x] Step 1.1. The first step is to think about the main table from which we start designing
-     - [ ] In this table, it is important to think about the main attributes that we will find in the table.
-- [x] Step 1.2. After we have established the main attributes, then we have to think about which of these attributes will be repeated and it is not right from an optimization point of view to have the values ​​of these attributes as many times as possible in our main table.
-     - [ ] Determine which are the attributes that will be repeated and create a separate table for them.
-     - [ ] For these tables, create a list of significant attributes that we will find in the diagram.
-- [x] Step 1.3. In addition to these tables, we should also think of a series of tables that we want to include in our scheme to be able to design our business model
-     - [ ] In order to figure out which tables we should add, we should ask ourselves a series of business questions such as:
-          - [x] What do we want to do with the main object in our database?
-          - [x] When do we want to do this with our main object?
-          - [x] How do we want to do this with our main object?
-          - [ ] There is no problem if we add tables to the scheme along the way. We can always return to this scheme and add more elements as long as we make the changes in the next scheme as well.
-- [x] Step 1.4. At this step we have tables that we will use and we want to see what are the relationships between these tables.
-     - [ ] I will describe the process between two tables and the rest will be done exactly the same. If we consider the book and author table, then we can start to draw the relationships between the entities. These relationships are created based on a series of questions that we ask regarding the two tables that we have. There are 3 types of relationships that we can draw, namely One To One, One To Many and Many to Many. The sign of "One" is represented by a simple bar. The sign of "Many" is presented in many ways, but we will consider the "crow's foot" or "-<-" as the only sign that we will use at this moment.
-          - [x] Step 1.4.1. Can a book be written by one author (one author), several authors?
-               - [ ] If a book can be written by several authors, then we will put the sign for "Many" next to the author table.
-               - [ ] The thing related to the existence of a book that may not have any author gives us the cardinality. This tells us if it is possible in our model to have a book that does not have an author. In this case, we must put a bar next to the "Many" sign next to the table. If we put this bar then we have to realize that a book can have one or more authors, but not necessarily only one.
-          - [x] Step 1.4.2. Can an author write a book (one book), several books? Can an author not write a book?          
-               - [x] We have to ask the same questions in the opposite direction to be able to make the connection between the author table and the book.
-          - [ ] After we have finished with these two tables, we must do the same for all the tables we have in the diagram depending on the connection we want to have between the entities.       
-- [x] Step 1.5. At this step, we have to determine which are the primary keys for all the tables that we find in our scheme.
-     - [x] The primary key represents the attribute that gives uniqueness to each record in our table. By uniqueness I mean the fact that this key cannot be NULL or be found on several records with the same value.
-     - [x] After finishing this step, we can move on to the next scheme.
-
+- [x] Step 2.1. The first thing we have to do is identify the 3 types of relationships we have from the previous diagram.
+     - [ ] One To One
+     - [ ] One To Many
+     - [ ] Many To Many
+- [x] Step 2.2. After we have identified the examples of relationships from each type, we should transform them. The main transformation consists in changing the "crow's foot" into an "X" next to the table where it is necessary and for the rest depending on the situation we will have to follow the situations below.
+     - [x] One To One Relations
+          - [ ] In the case of this relationship, we will do as follows. We need to add a foreign key to one of the tables. In this situation, the choice remains with us depending on what suits us more.
+          - [ ] After choosing which table to put the foreign key in, then we will add the column to the table.
+          - [ ] After that we will change the "crow's foot" with an "X" ​​next to the table where we put the foreign key.
+     - [x] One To Many Relations
+          - [ ] In the case of this relationship, we will do as follows. We have to put the foreing key in the table that have the "crow's foot". 
+          - [ ] After we put the foreign key column in table then we will have to change the "crow's foot" with an "X" ​​next to the table where we put the foreign key.   
+     - [x] Many to ManyRelations
+          - [ ] In the case of this relationship, we will do as follows.We will have to create a table that we will call "associative table".
+          - [ ] In this table we will include the primary keys of the two tables we linked. We will have to put one to many relations between the main tables and this associative table. I will also have to put a cross next to the "X" attached to the associative table.
+          - [ ] This sign "X" no longer signifies cardinality, but represents the fact that the primary keys added to the associative table will also have to be foreign keys.
+          - [ ] In this associative table you can also enter other attributes that may be significant for the moment when a record is created linked to the two tables in the database.
+- [x] Step 2.3. After we have achieved this, we can move on to the next scheme.
+          
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
