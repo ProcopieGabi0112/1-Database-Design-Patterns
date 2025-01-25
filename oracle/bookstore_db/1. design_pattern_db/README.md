@@ -13,7 +13,7 @@ This is a folder where you can find all you need to knwo about the a design sche
 
 This diagram is made to detect which are the main tables that you will have in the database. Also in this scheme we will identify the bond between entities (tables) and the important attributes that we will find in each table.
 
-- [x] Step 1.1. The first step is to think about the main table from which we start designing
+- [x] Step 1.1. The first step is to think about the main table from which we start designing. The name of the table must be suggestive and must be a singular noun.
      - [ ] In this table, it is important to think about the main attributes that we will find in the table.
 - [x] Step 1.2. After we have established the main attributes, then we have to think about which of these attributes will be repeated and it is not right from an optimization point of view to have the values ​​of these attributes as many times as possible in our main table.
      - [ ] Determine which are the attributes that will be repeated and create a separate table for them.
