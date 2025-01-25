@@ -7,60 +7,63 @@
 
 This is a folder where you can find all you need to knwo about the a design schema of a database. In a case where everything could be done as per the book, the next steps should be the ones I will describe below:
 
-- [x] 1. Diagrama entitate - relatie
-     - [ ] design schemas of a database.
-- [x] 2. Schema conceptuala
-     - [ ] design schemas of a database.
-- [x] 3. Schema logica    
+## Main steps of database design
 
+### Step 1. Entity - Relation Diagram
+
+This diagram is made to detect which are the main tables that you will have in the database. Also in this scheme we will identify the bond between entities (tables) and the important attributes that we will find in each table.
+
+- [x] Step 1.1. The first step is to think about the main table from which we start designing
+     - [ ] In this table, it is important to think about the main attributes that we will find in the table.
+- [x] Step 1.2. After we have established the main attributes, then we have to think about which of these attributes will be repeated and it is not right from an optimization point of view to have the values ​​of these attributes as many times as possible in our main table.
+     - [ ] Determine which are the attributes that will be repeated and create a separate table for them.
+     - [ ] For these tables, create a list of significant attributes that we will find in the diagram.
+- [x] Step 1.3. In addition to these tables, we should also think of a series of tables that we want to include in our scheme to be able to design our business model
+     - [ ] In order to figure out which tables we should add, we should ask ourselves a series of business questions such as:
+          - [x] What do we want to do with the main object in our database?
+          - [x] When do we want to do this with our main object?
+          - [x] How do we want to do this with our main object?
+          - [ ] There is no problem if we add tables to the scheme along the way. We can always return to this scheme and add more elements as long as we make the changes in the next scheme as well.
+- [x] Step 1.4. At this step we have tables that we will use and we want to see what are the relationships between these tables.
+     - [ ] I will describe the process between two tables and the rest will be done exactly the same. If we consider the book and author table, then we can start to draw the relationships between the entities. These relationships are created based on a series of questions that we ask regarding the two tables that we have. There are 3 types of relationships that we can draw, namely One To One, One To Many and Many to Many. The sign of "One" is represented by a simple bar. The sign of "Many" is presented in many ways, but we will consider the "crow's foot" or "-<-" as the only sign that we will use at this moment.
+          - [x] Step 1.4.1. Can a book be written by one author (one author), several authors?
+               - [ ] If a book can be written by several authors, then we will put the sign for "Many" next to the author table.
+               - [ ] The thing related to the existence of a book that may not have any author gives us the cardinality. This tells us if it is possible in our model to have a book that does not have an author. In this case, we must put a bar next to the "Many" sign next to the table. If we put this bar then we have to realize that a book can have one or more authors, but not necessarily only one.
+          - [x] Step 1.4.2. Can an author write a book (one book), several books? Can an author not write a book?          
+               - [x] We have to ask the same questions in the opposite direction to be able to make the connection between the author table and the book.
+          - [ ] After we have finished with these two tables, we must do the same for all the tables we have in the diagram depending on the connection we want to have between the entities.       
+- [x] Step 1.5. At this step, we have to determine which are the primary keys for all the tables that we find in our scheme.
+     - [x] The primary key represents the attribute that gives uniqueness to each record in our table. By uniqueness I mean the fact that this key cannot be NULL or be found on several records with the same value.
+     - [x] After finishing this step, we can move on to the next scheme.
+      
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-## Getting Started
+### Step 1. Entity - Relation Diagram
 
-Above you can select the type of database system. By accessing the respective folder, you will find other folders with specific names that will guide you to the desired example.
+This diagram is made to detect which are the main tables that you will have in the database. Also in this scheme we will identify the bond between entities (tables) and the important attributes that we will find in each table.
 
-## Installation
-
-After choosing the type of system you will find a folder called ``install_pref_vers`` where you will find steps for installing each version of the database system you are looking for.
-If you want to add other versions, don't hesitate to contact me.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Roadmap
-
-In order to understand exactly what the study of a database system consists of, we will present below the steps we consider necessary to deepen the design you are looking for.
-
-- [x] 1. Design Patterns of Databases Course
-     - [ ] design schemas of a database.
-     - [ ] structure of tables.
-     - [ ] dependencies between tables.
-     - [ ] the final structure of the tables that we will have to make in the database.
-     - [ ] design tools for database schema.
-- [x] DDL Course (Data Definition Language)
-     - [ ] create tables
-     - [ ] create ``bonds`` between tables.
-     - [ ] CREATE/ALTER/DROP/TRUNCATE
-- [x] DML Course (Data Manipulation Language)
-     - [ ] learn how to create data that will be inserted into your tables.
-     - [ ] learn how to import or export data from table using IDE or syntax.
-     - [ ] INSERT/UPDATE/DELETE 
-- [x] DCL & TCL Course (Data Control Language / Transaction Control Language)
-     - [ ] learn how to create your database users.
-     - [ ] learn how to grant them the rights to access your data.
-     - [ ] learn how to save the last session you worked on.
-     - [ ] GRANT/REVOKE/COMMIT/ROLLBACK/SAVEPOINT
-- [x] DQL Cource (Data Query Language)
-     - [ ] task_1
-     - [ ] task_2
-- [x] DQL Cource (Data Query Language)
-     - [ ] task_1
-- [x] Data Warehouse Arhitecture Course
-     - [ ] task_1
-- [x] Distributed Database System Course
-     - [ ] task_1
-- [x] Cloud Database System Course
-     - [ ] task_1
+- [x] Step 1.1. The first step is to think about the main table from which we start designing
+     - [ ] In this table, it is important to think about the main attributes that we will find in the table.
+- [x] Step 1.2. After we have established the main attributes, then we have to think about which of these attributes will be repeated and it is not right from an optimization point of view to have the values ​​of these attributes as many times as possible in our main table.
+     - [ ] Determine which are the attributes that will be repeated and create a separate table for them.
+     - [ ] For these tables, create a list of significant attributes that we will find in the diagram.
+- [x] Step 1.3. In addition to these tables, we should also think of a series of tables that we want to include in our scheme to be able to design our business model
+     - [ ] In order to figure out which tables we should add, we should ask ourselves a series of business questions such as:
+          - [x] What do we want to do with the main object in our database?
+          - [x] When do we want to do this with our main object?
+          - [x] How do we want to do this with our main object?
+          - [ ] There is no problem if we add tables to the scheme along the way. We can always return to this scheme and add more elements as long as we make the changes in the next scheme as well.
+- [x] Step 1.4. At this step we have tables that we will use and we want to see what are the relationships between these tables.
+     - [ ] I will describe the process between two tables and the rest will be done exactly the same. If we consider the book and author table, then we can start to draw the relationships between the entities. These relationships are created based on a series of questions that we ask regarding the two tables that we have. There are 3 types of relationships that we can draw, namely One To One, One To Many and Many to Many. The sign of "One" is represented by a simple bar. The sign of "Many" is presented in many ways, but we will consider the "crow's foot" or "-<-" as the only sign that we will use at this moment.
+          - [x] Step 1.4.1. Can a book be written by one author (one author), several authors?
+               - [ ] If a book can be written by several authors, then we will put the sign for "Many" next to the author table.
+               - [ ] The thing related to the existence of a book that may not have any author gives us the cardinality. This tells us if it is possible in our model to have a book that does not have an author. In this case, we must put a bar next to the "Many" sign next to the table. If we put this bar then we have to realize that a book can have one or more authors, but not necessarily only one.
+          - [x] Step 1.4.2. Can an author write a book (one book), several books? Can an author not write a book?          
+               - [x] We have to ask the same questions in the opposite direction to be able to make the connection between the author table and the book.
+          - [ ] After we have finished with these two tables, we must do the same for all the tables we have in the diagram depending on the connection we want to have between the entities.       
+- [x] Step 1.5. At this step, we have to determine which are the primary keys for all the tables that we find in our scheme.
+     - [x] The primary key represents the attribute that gives uniqueness to each record in our table. By uniqueness I mean the fact that this key cannot be NULL or be found on several records with the same value.
+     - [x] After finishing this step, we can move on to the next scheme.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
