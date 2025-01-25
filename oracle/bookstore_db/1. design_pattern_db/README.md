@@ -148,7 +148,7 @@ These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this depen
 
 `` ITEM TABLE `` (general informations about items)
 
-| #Item      |	Supplier     |	 Price   |
+| #Item      |	Supplier(FK) |	 Price   |
 |------------|--------------|----------|
 | XboxOne    | Microsoft    |  250     |
 | PS4        | Sony         |  300     |        
