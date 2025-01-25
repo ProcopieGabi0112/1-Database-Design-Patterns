@@ -75,11 +75,25 @@ In this diagram we will start from the relationship entity diagram. This diagram
      - [x] We do not put foreign keys in their tables. We just put the arrows to the tables we need. Until this step in the tables we pass only the primary keys.
      - [x] We make the transformations we made earlier. At "One To One" we modify with the "empty arrow". At "One To Many", we put the arrow towards "Many" table. And with "Many To Many", we make the table and the primary keys and make the arrows next to the associative table to be filled. 
      - [x] I have described the different notations regarding the writing of the verb above the bar and the notation with M, M(0) or M(1) in the relationship entity diagram. In this case, I see that this notation was preserved with M(1) and the writing of the verb above the line.
-     - [x] I have described the different notations regarding the writing of the verb above the bar and the notation with M, M(0) or M(1) in the relationship entity diagram. In this case, I see that this notation was preserved with M(1) and the writing of the verb above the line.     
-- [x] Step 3.3. 
-    
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+     - [x] I have described the different notations regarding the writing of the verb above the bar and the notation with M, M(0) or M(1) in the relationship entity diagram. In this case, I see that this notation was preserved with M(1) and the writing of the verb above the line.
+     - [ ] We will underline the primary key to figure out which of the columns it is.     
+- [x] Step 3.3. At this step we check if we have singular attributes. To understand better, we will think about an attribute called "address". This "address" attribute will contain several elements that we will "break" into several columns. If certain columns of these will have values ​​that can be repeated excessively then we will consider the idea of ​​making another table where we will add these values ​​and we will add in our main table a foreign key to the primary key of this newly created table.
+- [x] Step 3.4. Also here we have to make sure that our model is in all the normal forms that we will describe below.
+     - [x] The first normal form
+          - [x] A relationship is in the first normal form if each attribute that composes it corresponds to an indivisible (atomic) value. To understand better we can consider the example with the "address" column mentioned earlier. It is not right to leave in a table the primary key and a very long column with a lot of information in it. This information must be separated and placed on a different record that must be linked to the same primary key or make several columns.
+     - [x] The second normal form
+          - [x] A relation is in second normal form if and only if: a) the relation is in FN1 and b) every attribute that is not a key (does not participate in the primary key) is dependent on the entire primary key. We will consider an example below to understand better. Example of  that is not in Second Normal Form (2NF). Let’s consider a table called "Order" that is not in Second Normal Form (2NF). This table contains information about orders, products, and customers
 
+| #OrderID  | #ProductID | ProductName | CustomerID | CustomerName  | Quantity | UnitPrice  |
+|-----------|------------|-------------|------------|---------------|----------|------------|
+| 1         | 101        | Laptop      | 201        | John Smith    |  2       | 3000       |
+| 1         | 102        | Mouse       | 201        | John Smith    |  1       | 100        |     
+| 2         | 103        | Keyboard    | 202        | Mary Johnson  |  2       | 200        |
+
+The table does not comply with Second Normal Form (2NF) because the primary key is compose from 2 attributes (OrderID, ProductID).
+Attributes `ProductName` and `UnitPrice` depend only on ``#ProductID``, and `CustomerName` depends only on ``#CustomerID``, not on the entire primary key (OrderID + ProductID).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
