@@ -134,7 +134,34 @@ Important in this normal form is not to agglomerate a lot of information in a ta
 | 2          | 103          |  1        |
 
 - [x] The third normal form
-          - [x] A relation is in second normal form if and only if: a) the relation is in FN1 and b) every attribute that is not a key (does not participate in the primary key) is dependent on the entire primary key. We will consider an example below to understand better. Example of  that is not in Second Normal Form (2NF). Let’s consider a table called "Order" that is not in Second Normal Form (2NF). This table contains information about orders, products, and customers
+     - [x] A relation is in third normal form if and only if the relation is in FN2 and if every attribute that is not a key (does not participate in a key) depends on the key, on the whole key and only on the key. We will also use an example to highlight what the third normal form means. We will consider the ``SALES`` table
+
+`` SALES TABLE `` (relationship between orders and products)
+
+| #Item      |	Supplier     |	Phone Supplier   | Price   |
+|------------|--------------|------------------|---------|
+| XboxOne    | Microsoft    |  (800) +07443355 | 250     |
+| PS4        | Sony         |  (800) +07557799 | 300     |        
+| PSVita     | Sony         |  (800) +07557799 | 200     |
+
+These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this dependency could be optimized as follows.
+
+`` ITEM TABLE `` (general informations about items)
+
+| #Item      |	Supplier     |	 Price   |
+|------------|--------------|----------|
+| XboxOne    | Microsoft    |  250     |
+| PS4        | Sony         |  300     |        
+| PSVita     | Sony         |  200     |
+
+`` SUPPLIER TABLE `` (general information about suppliers)
+
+|	Supplier  |  Phone Supplier  |   
+|--------------|------------------|
+| Microsoft    |  (800) +07443355 |
+| Sony         |  (800) +07557799 |       
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
