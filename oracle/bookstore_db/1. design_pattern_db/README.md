@@ -96,38 +96,45 @@ The solution to solve this problem can be seen below
 
 ## Steps to Transform into 2NF
 
-### Identify functional dependencies:
+### 1. Identify functional dependencies:
    `ProductName` and `UnitPrice` depend only on `#ProductID`.
    `CustomerName` depends only on `CustomerID`.
    `Quantity` depends on the entire composite key (`OrderID`, `ProductID`).
-### Split the table into smaller tables: Create separate tables for entities with their own dependencies.
+### 2. Split the table into smaller tables: Create separate tables for entities with their own dependencies.
+Important in this normal form is not to agglomerate a lot of information in a table, but divide the information between several tables. We can think of the tables we could make without thinking about the existence of this normal form.
 
-Order Table (general order information)
+`` [1] CUSTOMER TABLE `` (customer details)
 
-OrderID	CustomerID
-1	201
-2	202
+| CustomerID | CustomerName | 
+|------------|--------------|
+| 201        | John Smith   |
+| 202        | Mary Johnson | 
 
-Customer Table (customer details)
+`` [2] PRODUCT TABLE `` (product details)
 
-CustomerID	CustomerName
-201	John Smith
-202	Mary Johnson
+| ProductID  |	ProductName  |	UnitPrice | 
+|------------|--------------|-----------|
+| 101        | Laptop       |  3000     |
+| 102        | Mouse        |  100      |         
+| 103        | Keyboard     |  200      |
 
-Product Table (product details)
-ProductID	ProductName	UnitPrice
-101	Laptop	3000
-102	Mouse	100
-103	Keyboard	200
+`` [3] ORDER TABLE `` (general order information)
 
-Order_Product Table (relationship between orders and products):
+| OrderID   | CustomerID | 
+|-----------|------------|
+| 1         | 201        |
+| 1         | 202        |      
 
-OrderID	ProductID	Quantity
-1	101	2
-1	102	1
-2	103	1
+`` [4] ORDER - PRODUCT TABLE `` (relationship between orders and products)
 
+| OrderID    |	ProductID    |	Quantity  | 
+|------------|--------------|-----------|
+| 1          | 101          |  2        |
+| 1          | 102          |  1        |         
+| 2          | 103          |  1        |
 
+- [x] The third normal form
+          - [x] A relation is in second normal form if and only if: a) the relation is in FN1 and b) every attribute that is not a key (does not participate in the primary key) is dependent on the entire primary key. We will consider an example below to understand better. Example of  that is not in Second Normal Form (2NF). Let’s consider a table called "Order" that is not in Second Normal Form (2NF). This table contains information about orders, products, and customers
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
