@@ -54,7 +54,7 @@ In this diagram we will transform the relationships we have just defined in the 
      - [x] One To Many Relations
           - [ ] In the case of this relationship, we will do as follows. We have to put the foreing key in the table that have the "crow's foot". 
           - [ ] After we put the foreign key column in table then we will have to change the "crow's foot" with an "X" ​​next to the table where we put the foreign key.   
-     - [x] Many to ManyRelations
+     - [x] Many to Many Relations
           - [ ] In the case of this relationship, we will do as follows.We will have to create a table that we will call "associative table".
           - [ ] In this table we will include the primary keys of the two tables we linked. We will have to put one to many relations between the main tables and this associative table. I will also have to put a cross next to the "X" attached to the associative table.
           - [ ] This sign "X" no longer signifies cardinality, but represents the fact that the primary keys added to the associative table will also have to be foreign keys.
