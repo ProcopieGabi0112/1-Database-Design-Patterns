@@ -25,7 +25,7 @@ This diagram is made to detect which are the main tables that you will have in t
           - [x] How do we want to do this with our main object?
           - [ ] There is no problem if we add tables to the scheme along the way. We can always return to this scheme and add more elements as long as we make the changes in the next scheme as well.
 - [x] Step 1.4. At this step we have tables that we will use and we want to see what are the relationships between these tables.
-     - [ ] I will describe the process between two tables and the rest will be done exactly the same. If we consider the book and author table, then we can start to draw the relationships between the entities. These relationships are created based on a series of questions that we ask regarding the two tables that we have. There are 3 types of relationships that we can draw, namely One To One, One To Many and Many to Many. The sign of "One" is represented by a simple bar. The sign of "Many" is presented in many ways, but we will consider the "crow's foot" or "-<-" as the only sign that we will use at this moment.
+     - [ ] I will describe the process between two tables and the rest will be done exactly the same. If we consider the book and author table, then we can start to draw the relationships between the entities. These relationships are created based on a series of questions that we ask regarding the two tables that we have. There are 3 types of relationships that we can draw, namely One To One, One To Many and Many to Many. The sign of "One" is represented by a simple bar. The sign of "Many" is presented in many ways, but we will consider the "crow's foot" or "-<-" as the only sign that we will use at this moment. In theory, we have more type of notations. We can use "-<-" but can simply write above the bar M, M(1) or M(0) where this 1/0 represent the cardinality. In most cases, I have noticed that this notation is used to cross the middle of the bar with the verb you would use in the question you are about to ask. 
           - [x] Step 1.4.1. Can a book be written by one author (one author), several authors?
                - [ ] If a book can be written by several authors, then we will put the sign for "Many" next to the author table.
                - [ ] The thing related to the existence of a book that may not have any author gives us the cardinality. This tells us if it is possible in our model to have a book that does not have an author. In this case, we must put a bar next to the "Many" sign next to the table. If we put this bar then we have to realize that a book can have one or more authors, but not necessarily only one.
@@ -48,7 +48,7 @@ In this diagram we will transform the relationships we have just defined in the 
      - [ ] Many To Many
 - [x] Step 2.2. After we have identified the examples of relationships from each type, we should transform them. The main transformation consists in changing the "crow's foot" into an "X" next to the table where it is necessary and for the rest depending on the situation we will have to follow the situations below.
      - [x] One To One Relations
-          - [ ] In the case of this relationship, we will do as follows. We need to add a foreign key to one of the tables. In this situation, the choice remains with us depending on what suits us more.
+          - [ ] In the case of this relationship, we will do as follows. We need to add a foreign key to one of the tables. In this situation, the choice remains with us depending on what suits us more. In some situations, we can put it on the table with less columns.
           - [ ] After choosing which table to put the foreign key in, then we will add the column to the table.
           - [ ] After that we will change the "crow's foot" with an "X" ​​next to the table where we put the foreign key.
      - [x] One To Many Relations
@@ -62,6 +62,41 @@ In this diagram we will transform the relationships we have just defined in the 
 - [x] Step 2.3. After we have achieved this, we can move on to the next scheme.
           
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Step 3. The logical design of the database
+
+In this diagram we will start from the relationship entity diagram. This diagram is similar to the conceptual diagram, only that it uses certain elements from the entity-relationship diagram.
+
+- [x] Step 3.1. The first thing we have to do is identify the 3 types of relationships we have from the entity relation diagram.
+     - [ ] One To One
+     - [ ] One To Many
+     - [ ] Many To Many
+- [x] Step 3.2. After we have identified the examples of relationships from each type, we should transform them exactly as above. The main transformation consists in changing the "crow's foot" into an "->" next to the table where it is necessary and for the rest depending on the situation we will have to follow the situations below. If we have a foreign key then we put the "empty arrow" in the right where we have the foreign key. If the foreign key is also a primary key, then we will put the "filled arrow".
+     - [x] We do not put foreign keys in their tables. We just put the arrows to the tables we need. Until this step in the tables we pass only the primary keys.
+     - [x] We make the transformations we made earlier. At "One To One" we modify with the "empty arrow". At "One To Many", we put the arrow towards "Many" table. And with "Many To Many", we make the table and the primary keys and make the arrows next to the associative table to be filled. 
+     - [x] I have described the different notations regarding the writing of the verb above the bar and the notation with M, M(0) or M(1) in the relationship entity diagram. In this case, I see that this notation was preserved with M(1) and the writing of the verb above the line.
+     - [x] I have described the different notations regarding the writing of the verb above the bar and the notation with M, M(0) or M(1) in the relationship entity diagram. In this case, I see that this notation was preserved with M(1) and the writing of the verb above the line.     
+- [x] Step 3.3. 
+    
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+### Step 4. The physical design of the database
+
+In this diagram we will transform the relationships we have just defined in the scheme. Depending on the relationships that we will transform, we will also introduce foreign keys into the tables.
+         
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+
+
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
