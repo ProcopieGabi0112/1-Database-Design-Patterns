@@ -92,6 +92,42 @@ In this diagram we will start from the relationship entity diagram. This diagram
 
 The table does not comply with Second Normal Form (2NF) because the primary key is compose from 2 attributes (OrderID, ProductID).
 Attributes `ProductName` and `UnitPrice` depend only on ``#ProductID``, and `CustomerName` depends only on ``#CustomerID``, not on the entire primary key (OrderID + ProductID).
+The solution to solve this problem can be seen below
+
+## Steps to Transform into 2NF
+
+### Identify functional dependencies:
+   `ProductName` and `UnitPrice` depend only on `#ProductID`.
+   `CustomerName` depends only on `CustomerID`.
+   `Quantity` depends on the entire composite key (`OrderID`, `ProductID`).
+### Split the table into smaller tables: Create separate tables for entities with their own dependencies.
+
+Order Table (general order information)
+
+OrderID	CustomerID
+1	201
+2	202
+
+Customer Table (customer details)
+
+CustomerID	CustomerName
+201	John Smith
+202	Mary Johnson
+
+Product Table (product details)
+ProductID	ProductName	UnitPrice
+101	Laptop	3000
+102	Mouse	100
+103	Keyboard	200
+
+Order_Product Table (relationship between orders and products):
+
+OrderID	ProductID	Quantity
+1	101	2
+1	102	1
+2	103	1
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
