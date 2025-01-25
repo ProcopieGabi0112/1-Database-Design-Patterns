@@ -161,11 +161,139 @@ These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this depen
 | Microsoft    |  (800) +07443355 |
 | Sony         |  (800) +07557799 |       
 
+- [x] The third normal form
+     - [x] A relation is in third normal form if and only if the relation is in FN2 and if every attribute that is not a key (does not participate in a key) depends on the key, on the whole key and only on the key. We will also use an example to highlight what the third normal form means. We will consider the ``SALES`` table
 
+`` SALES TABLE `` (relationship between orders and products)
+
+| #Item      |	Supplier     |	Phone Supplier   | Price   |
+|------------|--------------|------------------|---------|
+| XboxOne    | Microsoft    |  (800) +07443355 | 250     |
+| PS4        | Sony         |  (800) +07557799 | 300     |        
+| PSVita     | Sony         |  (800) +07557799 | 200     |
+
+These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this dependency could be optimized as follows.
+
+`` ITEM TABLE `` (general informations about items)
+
+| #Item      |	Supplier(FK) |	 Price   |
+|------------|--------------|----------|
+| XboxOne    | Microsoft    |  250     |
+| PS4        | Sony         |  300     |        
+| PSVita     | Sony         |  200     |
+
+`` SUPPLIER TABLE `` (general information about suppliers)
+
+|	Supplier  |  Phone Supplier  |   
+|--------------|------------------|
+| Microsoft    |  (800) +07443355 |
+| Sony         |  (800) +07557799 |       
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+4. Forma normală Boyce-Codd (BCNF)
+Un tabel este în BCNF dacă este în 3NF, iar fiecare determinant este o cheie supercandidată.
 
+Exemplu:
+
+Profesor	Materie	Sală
+Popescu	Matematică	101
+Ionescu	Fizică	102
+Popescu	Fizică	101
+Problema:
+Profesor → Sală (un profesor are sala sa).
+Sală → Materie (o sală este destinată unei singure materii).
+Aceste dependențe creează o problemă, deoarece sala determină indirect profesorul, iar Profesor nu este o cheie supercandidată.
+Rezolvare:
+Împărțim tabelul în două:
+
+Tabel Profesor-Sală:
+Profesor	Sală
+Popescu	101
+Ionescu	102
+Tabel Sală-Materie:
+Sală	Materie
+101	Matematică
+102	Fizică
+5. A patra formă normală (4NF)
+Un tabel este în 4NF dacă este în BCNF și nu conține dependențe multivaluate.
+
+Exemplu:
+
+ID_Autor	Limbă	Gen_Literar
+1	Engleză	Poezie
+1	Franceză	Poezie
+1	Engleză	Roman
+1	Franceză	Roman
+Problema:
+Există o dependență multivaluată între Limbă și Gen_Literar pentru același autor. Aceste două informații nu sunt legate între ele, ceea ce introduce redundanță.
+
+Rezolvare:
+Împărțim tabelul în două:
+
+Tabel Autor-Limbă:
+ID_Autor	Limbă
+1	Engleză
+1	Franceză
+Tabel Autor-Gen:
+ID_Autor	Gen_Literar
+1	Poezie
+1	Roman
+Astfel, eliminăm redundanța.
+
+6. A cincea formă normală (5NF)
+Un tabel este în 5NF dacă este în 4NF și toate dependențele sunt dependențe de proiecție-uniune (adică orice informație pierdută prin împărțirea tabelelor poate fi reconstruită doar prin unirea acestora).
+
+Exemplu:
+
+ID_Proiect	ID_Angajat	Rol
+1	101	Programator
+1	102	Tester
+2	101	Programator
+2	103	Manager
+Problema:
+Relația complexă dintre proiecte, angajați și roluri poate duce la redundanță. Trebuie să vedem dacă putem împărți acest tabel fără pierderi.
+
+Rezolvare:
+Împărțim tabelul în trei proiecții:
+
+Tabel Proiect-Angajat:
+ID_Proiect	ID_Angajat
+1	101
+1	102
+2	101
+2	103
+Tabel Proiect-Rol:
+ID_Proiect	Rol
+1	Programator
+1	Tester
+2	Programator
+2	Manager
+Tabel Angajat-Rol:
+ID_Angajat	Rol
+101	Programator
+102	Tester
+103	Manager
+Acum, putem reconstrui tabelul original prin unirea acestor tabele.
+
+6. A șasea formă normală (6NF)
+6NF este utilizată doar în baze de date temporale sau extrem de complexe. Este necesară pentru a gestiona modificări în timp și pentru a păstra o granularitate fină a datelor.
+
+Exemplu:
+
+Un tabel care stochează schimbările salariale ale unui angajat pe o perioadă:
+
+ID_Angajat	Salariu	Dată_Start	Dată_End
+1	3000	2025-01-01	2025-06-30
+1	3500	2025-07-01	NULL
+În 6NF, separăm fiecare atribut care poate varia în timp în tabele separate:
+
+Tabel Salarii:
+ID_Angajat	Salariu	Dată_Start	Dată_End
+1	3000	2025-01-01	2025-06-30
+1	3500	2025-07-01	NULL
+Tabel Alte_Atribute:
+Pentru alte informații (cum ar fi poziția sau beneficiile) se creează tabele dedicate.
 
 
 ### Step 4. The physical design of the database
