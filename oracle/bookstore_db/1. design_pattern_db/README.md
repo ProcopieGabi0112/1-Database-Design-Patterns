@@ -292,6 +292,20 @@ The first step would be to identify the attributes that can vary over time. Attr
 |--------------|-----------|
 | 1            | NULL      |      
 
+#### Conclusions
+
+| x  | x | x | x | x  | x | x  |
+|----|---|---|---|----|---|----|
+| 1  | x | x | x | x  | x | x  |
+| 2  | x | x | x | x  | x | x  |
+| 3  | x | x | x | x  | x | x  |
+| 4  | x | x | x | x  | x | x  |
+| 5  | x | x | x | x  | x | x  |
+| 6  | x | x | x | x  | x | x  |
+| x  | x | x | x | x  | x | x  |
+| x  | x | x | x | x  | x | x  |
+
+
 ### Step 4. The physical design of the database
 
 In this diagram we will insert everything we need to be able to create the database.
