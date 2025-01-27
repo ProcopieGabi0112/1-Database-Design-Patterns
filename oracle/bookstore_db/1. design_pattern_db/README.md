@@ -294,15 +294,15 @@ The first step would be to identify the attributes that can vary over time. Attr
 
 #### Conclusions
 
-| Form | Description |
-|------|-------------|
+| Form | Practical advice |
+|------|------------------|
 | FN1  | Do not keep too much information in one column          |
-| FN2  | x           |
-| FN3  | x           | 
-| BCNF | x           |
-| FN4  | x           |
-| FN5  | x           |
-| FN6  | x           |
+| FN2  | If you create a table with a multiple primary key, see if there is a better option to break the table in two. There is a chance that not all attributes depend on the entire composed key |
+| FN3  | If there is a possibility to remove an attribute outside a table by foreign key, then do not hesitate to do so.           | 
+| BCNF | If the information in a table does not seem clear to you, then break the table into several tables and see if you get roughly the same thing.           |
+| FN4  | Generalization FN3. Do not try to keep very large values ​​in a single column of a table.           |
+| FN5  | Generalization FN3. Do not try to keep a lot of columns in a table. It's better to keep the columns separate so you don't end up not realizing what you have there.         |
+| FN6  | The more complicated the business logic is, the more complicated it is to figure out what you want to do basically. Keep things simple.          |
 
 
 ### Step 4. The physical design of the database
