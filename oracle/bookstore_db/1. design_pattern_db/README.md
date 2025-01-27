@@ -296,7 +296,7 @@ The first step would be to identify the attributes that can vary over time. Attr
 
 | Form | Description |
 |------|-------------|
-| FN1  | x           |
+| FN1  | Do not keep too much information in one column          |
 | FN2  | x           |
 | FN3  | x           | 
 | BCNF | x           |
