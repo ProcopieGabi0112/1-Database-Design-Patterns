@@ -193,62 +193,40 @@ The solution to this problem is to divide the table into two tables.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- [x] The third normal form
-     - [x] A relation is in third normal form if and only if the relation is in FN2 and if every attribute that is not a key (does not participate in a key) depends on the key, on the whole key and only on the key. We will also use an example to highlight what the third normal form means. We will consider the ``SALES`` table
+- [x] The fourth normal form
+     - [x] A relation is in fourth normal form if and only if the relation is in BCNF and if and contains no multivalued dependencies. Multivalued dependencies is the situation in which the value of one attribute (or many attributes) determines many values ​​of another attribute (or many attributes).
 
-`` SALES TABLE `` (relationship between orders and products)
+`` AUTHOR TABLE `` (information about the authors)
 
-| #Item      |	Supplier     |	Phone Supplier   | Price   |
-|------------|--------------|------------------|---------|
-| XboxOne    | Microsoft    |  (800) +07443355 | 250     |
-| PS4        | Sony         |  (800) +07557799 | 300     |        
-| PSVita     | Sony         |  (800) +07557799 | 200     |
+| author_id  |	language   |  genre  |
+|------------|------------|---------|
+| 1          | english    |  poetry |
+| 1          | french     |  poetry |         
+| 1          | english    |  novel  | 
+| 1          | french     |  novel  |
 
-These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this dependency could be optimized as follows.
+The problem is related to the fact that there is a multivalued dependency between ``language`` and ``genre`` for the same author. These two pieces of information are not related to each other, which introduces redundancy.
 
-`` ITEM TABLE `` (general informations about items)
+`` AUTHOR LANGUAGE TABLE `` (general informations about language of authors)
 
-| #Item      |	Supplier(FK) |	 Price   |
-|------------|--------------|----------|
-| XboxOne    | Microsoft    |  250     |
-| PS4        | Sony         |  300     |        
-| PSVita     | Sony         |  200     |
+| author_id  |	language |
+|------------|----------|
+| 1          | english  |
+| 1          | french   | 
 
-`` SUPPLIER TABLE `` (general information about suppliers)
+`` AUTHOR GENRE TABLE `` (general information about genre of authors)
 
-|	Supplier  |  Phone Supplier  |   
-|--------------|------------------|
-| Microsoft    |  (800) +07443355 |
-| Sony         |  (800) +07557799 | 
+| author_id  |	genre  |
+|------------|--------|
+| 1          | poetry |
+| 1          | novel  | 
 
 
-5. A patra formă normală (4NF)
-Un tabel este în 4NF dacă este în BCNF și nu conține dependențe multivaluate.
 
-Exemplu:
 
-ID_Autor	Limbă	Gen_Literar
-1	Engleză	Poezie
-1	Franceză	Poezie
-1	Engleză	Roman
-1	Franceză	Roman
-Problema:
-Există o dependență multivaluată între Limbă și Gen_Literar pentru același autor. Aceste două informații nu sunt legate între ele, ceea ce introduce redundanță.
 
-Rezolvare:
-Împărțim tabelul în două:
 
-Tabel Autor-Limbă:
-ID_Autor	Limbă
-1	Engleză
-1	Franceză
-Tabel Autor-Gen:
-ID_Autor	Gen_Literar
-1	Poezie
-1	Roman
-Astfel, eliminăm redundanța.
-
-6. A cincea formă normală (5NF)
+5. A cincea formă normală (5NF)
 Un tabel este în 5NF dacă este în 4NF și toate dependențele sunt dependențe de proiecție-uniune (adică orice informație pierdută prin împărțirea tabelelor poate fi reconstruită doar prin unirea acestora).
 
 Exemplu:
