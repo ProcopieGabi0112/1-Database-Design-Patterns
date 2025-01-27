@@ -161,6 +161,38 @@ These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this depen
 | Microsoft    |  (800) +07443355 |
 | Sony         |  (800) +07557799 |       
 
+- [x] The Boyce-Codd normal form (BCNF)
+     - [x]  A relation is in BCNF if and only if the relation is in FN3 and each determinant is a supercandidate key. The determinant is an attribute or a set of redundant attributes, which constitutes a unique identifier for another attribute or set of attributes of a given relationship. A supercandidate key is a set of one or more attributes in a database table that can uniquely identify each row in the table.
+
+`` TEACHER TABLE `` (information about teachers)
+
+| teacher    |	discipline   |	room  | 
+|------------|--------------|-------|
+| Popescu    | Matematică   | 101   |
+| Ionescu    | Fizică       | 102   |        
+| Popescu    | Fizică       | 101   |
+
+These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this dependency could be optimized as follows.
+The problem is the following. The teacher depends on the room. A room is intended for a single dsicipline.
+These dependencies create a problem because the room indirectly determines the teacher, and Teacher is not a supercandidate key.
+The solution to this problem is to divide the table into two tables.
+
+`` TEACHERS ROOMS TABLE `` (information about the room of the teachers)
+
+| teacher    |	room  | 
+|------------|-------|
+| Popescu    | 101   |
+| Ionescu    | 102   |        
+
+`` ROOM DISCIPLINE TABLE `` (information about the discipline of the rooms)
+
+| room   | discipline  | 
+|--------|-------------|
+| 101    | Matematică  |
+| 102    | Fizică      |       
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 - [x] The third normal form
      - [x] A relation is in third normal form if and only if the relation is in FN2 and if every attribute that is not a key (does not participate in a key) depends on the key, on the whole key and only on the key. We will also use an example to highlight what the third normal form means. We will consider the ``SALES`` table
 
@@ -187,34 +219,9 @@ These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this depen
 |	Supplier  |  Phone Supplier  |   
 |--------------|------------------|
 | Microsoft    |  (800) +07443355 |
-| Sony         |  (800) +07557799 |       
+| Sony         |  (800) +07557799 | 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-4. Forma normală Boyce-Codd (BCNF)
-Un tabel este în BCNF dacă este în 3NF, iar fiecare determinant este o cheie supercandidată.
-
-Exemplu:
-
-Profesor	Materie	Sală
-Popescu	Matematică	101
-Ionescu	Fizică	102
-Popescu	Fizică	101
-Problema:
-Profesor → Sală (un profesor are sala sa).
-Sală → Materie (o sală este destinată unei singure materii).
-Aceste dependențe creează o problemă, deoarece sala determină indirect profesorul, iar Profesor nu este o cheie supercandidată.
-Rezolvare:
-Împărțim tabelul în două:
-
-Tabel Profesor-Sală:
-Profesor	Sală
-Popescu	101
-Ionescu	102
-Tabel Sală-Materie:
-Sală	Materie
-101	Matematică
-102	Fizică
 5. A patra formă normală (4NF)
 Un tabel este în 4NF dacă este în BCNF și nu conține dependențe multivaluate.
 
