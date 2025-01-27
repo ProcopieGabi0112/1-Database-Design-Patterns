@@ -98,7 +98,7 @@ The solution to solve this problem can be seen below
    `ProductName` and `UnitPrice` depend only on `#ProductID`.
    `CustomerName` depends only on `CustomerID`.
    `Quantity` depends on the entire composite key (`OrderID`, `ProductID`).
-### 2. Split the table into smaller tables: Create separate tables for entities with their own dependencies.
+### 2. Split the table into smaller tables.
 Important in this normal form is not to agglomerate a lot of information in a table, but divide the information between several tables. We can think of the tables we could make without thinking about the existence of this normal form.
 
 `` [1] CUSTOMER TABLE `` (customer details)
@@ -220,77 +220,85 @@ The problem is related to the fact that there is a multivalued dependency betwee
 
 
 
+- [x] The fifth normal form
+     - [x] A relation is in fifth normal form if and only if the relation is in FN4 and if all dependencies are projection-union dependencies (that is, any information lost by splitting the tables can only be reconstructed by joining them).
 
+`` PROJECTS TABLE `` (information about the projects)
 
+| project_id | employee_id |  role       |
+|------------|-------------|-------------|
+| 1          | 101         | programmer  |
+| 1          | 102         | tester      |         
+| 2          | 101         | programmer  | 
+| 2          | 103         | manager     |
 
-5. A cincea formă normală (5NF)
-Un tabel este în 5NF dacă este în 4NF și toate dependențele sunt dependențe de proiecție-uniune (adică orice informație pierdută prin împărțirea tabelelor poate fi reconstruită doar prin unirea acestora).
+The problem is related to the fact that the complex relationship between projects, employees and roles can lead to redundancy. We need to see if we can split this table without loss. 
+The solution would be to split the table into three projections to be able to reconstruct the original table by joining these tables.
 
-Exemplu:
+`` PROJECT EMPLOYEE TABLE `` (relation between project and employee that work on)
 
-ID_Proiect	ID_Angajat	Rol
-1	101	Programator
-1	102	Tester
-2	101	Programator
-2	103	Manager
-Problema:
-Relația complexă dintre proiecte, angajați și roluri poate duce la redundanță. Trebuie să vedem dacă putem împărți acest tabel fără pierderi.
+| project_id  | employee_id |
+|-------------|-------------|
+| 1           | 101         |
+| 1           | 102         | 
+| 2           | 101         |
+| 2           | 103         |
 
-Rezolvare:
-Împărțim tabelul în trei proiecții:
+`` ROLE PROJECT TABLE `` (general information  role of the person who work on the projects)
 
-Tabel Proiect-Angajat:
-ID_Proiect	ID_Angajat
-1	101
-1	102
-2	101
-2	103
-Tabel Proiect-Rol:
-ID_Proiect	Rol
-1	Programator
-1	Tester
-2	Programator
-2	Manager
-Tabel Angajat-Rol:
-ID_Angajat	Rol
-101	Programator
-102	Tester
-103	Manager
-Acum, putem reconstrui tabelul original prin unirea acestor tabele.
+| project_id  | role        |
+|-------------|-------------|
+| 1           | programmer  |
+| 1           | tester      |
+| 2           | programmer  |
+| 2           | manager     |
 
-6. A șasea formă normală (6NF)
-6NF este utilizată doar în baze de date temporale sau extrem de complexe. Este necesară pentru a gestiona modificări în timp și pentru a păstra o granularitate fină a datelor.
+`` ROLE OF EMPLOYEE TABLE `` (general information about the role of the employees)
 
-Exemplu:
+| employee_id  |  role      |
+|--------------|------------|
+| 101          | programmer |
+| 102          | tester     | 
+| 103          | manager    |
 
-Un tabel care stochează schimbările salariale ale unui angajat pe o perioadă:
+- [x] The sixth normal form
+     - [x] A relation is in sixth normal form if and only if the relation can handle changes over time and to preserve fine granularity of data.
 
-ID_Angajat	Salariu	Dată_Start	Dată_End
-1	3000	2025-01-01	2025-06-30
-1	3500	2025-07-01	NULL
-În 6NF, separăm fiecare atribut care poate varia în timp în tabele separate:
+`` EMPLOYEE TABLE `` (information about the employees)
 
-Tabel Salarii:
-ID_Angajat	Salariu	Dată_Start	Dată_End
-1	3000	2025-01-01	2025-06-30
-1	3500	2025-07-01	NULL
-Tabel Alte_Atribute:
-Pentru alte informații (cum ar fi poziția sau beneficiile) se creează tabele dedicate.
+| employee_id  |  salary  | start_date  | end_date   |
+|--------------|----------|-------------|------------|
+| 1            |  3000    | 2025-06-30  |            |   
+| 1            |  3500    | NULL        |            |
 
+Above you can see a table in which the salary changes of an employee are stored over a period. 
+For this table to be in FN6, then we will have to separate each attribute that can vary over time into separate tables.
+The first step would be to identify the attributes that can vary over time. Attributes like ``salary``, ``start_date``, and ``end_date`` are time-dependent and can change for the same employee_id. Each of these attributes will be split into separate tables. The second step would be to create individual tables for each time-varying attribute
+
+`` SALARY TABLE `` (stores changes in salary over time)
+
+| employee_id  |  salary  | effective_date   |
+|--------------|----------|------------------|
+| 1            |  3000    | 2025-06-30       |            
+| 1            |  3500    | NULL             |           
+
+`` START_TIME TABLE `` (tracks the start date of changes or new roles.)
+
+| employee_id  | start_date       |
+|--------------|------------------|
+| 1            | 2025-06-30       |            
+           
+`` END_TIME TABLE `` (tracks the start date of changes or new roles.)
+
+| employee_id  | end_date  |
+|--------------|-----------|
+| 1            | NULL      |      
 
 ### Step 4. The physical design of the database
 
 In this diagram we will transform the relationships we have just defined in the scheme. Depending on the relationships that we will transform, we will also introduce foreign keys into the tables.
          
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-
-
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
