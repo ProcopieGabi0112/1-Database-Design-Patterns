@@ -94,8 +94,6 @@ The table does not comply with Second Normal Form (2NF) because the primary key 
 Attributes `ProductName` and `UnitPrice` depend only on ``#ProductID``, and `CustomerName` depends only on ``#CustomerID``, not on the entire primary key (OrderID + ProductID).
 The solution to solve this problem can be seen below
 
-## Steps to Transform into 2NF
-
 ### 1. Identify functional dependencies:
    `ProductName` and `UnitPrice` depend only on `#ProductID`.
    `CustomerName` depends only on `CustomerID`.
