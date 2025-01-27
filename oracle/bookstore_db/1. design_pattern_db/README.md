@@ -218,8 +218,6 @@ The problem is related to the fact that there is a multivalued dependency betwee
 | 1          | poetry |
 | 1          | novel  | 
 
-
-
 - [x] The fifth normal form
      - [x] A relation is in fifth normal form if and only if the relation is in FN4 and if all dependencies are projection-union dependencies (that is, any information lost by splitting the tables can only be reconstructed by joining them).
 
@@ -296,8 +294,21 @@ The first step would be to identify the attributes that can vary over time. Attr
 
 ### Step 4. The physical design of the database
 
-In this diagram we will transform the relationships we have just defined in the scheme. Depending on the relationships that we will transform, we will also introduce foreign keys into the tables.
-         
+In this diagram we will insert everything we need to be able to create the database.
+
+- [x] Step 4.1. At this step we will add the tables that we will have in the database
+     - [ ] table name
+     - [ ] data types of attributes
+     - [ ] comments of columns
+     - [ ] contraints (pk, fk and other constrainnts)
+     - [ ] other stuff that help you to build yor database
+- [x] Step 4.2. At this step we will add the relations between tables.
+     - [ ] We can only add the lines with the "x" sign next to the table where we find foreign keys.
+- [x] Step 4.3. We can also add ideas about types of triggers or other types of things that we can do later in the data processing stage.
+     - [ ] Indecsi
+     - [ ] Triggeri
+     - [ ] Partitioning
+        
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
