@@ -294,16 +294,15 @@ The first step would be to identify the attributes that can vary over time. Attr
 
 #### Conclusions
 
-| x  | x | x | x | x  | x | x  |
-|----|---|---|---|----|---|----|
-| 1  | x | x | x | x  | x | x  |
-| 2  | x | x | x | x  | x | x  |
-| 3  | x | x | x | x  | x | x  |
-| 4  | x | x | x | x  | x | x  |
-| 5  | x | x | x | x  | x | x  |
-| 6  | x | x | x | x  | x | x  |
-| x  | x | x | x | x  | x | x  |
-| x  | x | x | x | x  | x | x  |
+| Form | Description |
+|------|-------------|
+| FN1  | x           |
+| FN2  | x           |
+| FN3  | x           | 
+| BCNF | x           |
+| FN4  | x           |
+| FN5  | x           |
+| FN6  | x           |
 
 
 ### Step 4. The physical design of the database
