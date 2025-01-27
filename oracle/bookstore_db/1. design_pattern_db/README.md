@@ -172,7 +172,6 @@ These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this depen
 | Ionescu    | Fizică       | 102   |        
 | Popescu    | Fizică       | 101   |
 
-These 2 columns ``Supplier`` and ``Phone Supplier`` are dependent and this dependency could be optimized as follows.
 The problem is the following. The teacher depends on the room. A room is intended for a single dsicipline.
 These dependencies create a problem because the room indirectly determines the teacher, and Teacher is not a supercandidate key.
 The solution to this problem is to divide the table into two tables.
