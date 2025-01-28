@@ -7,17 +7,13 @@
 
 <a id="readme-top"></a>
 
-# 1-Oracle Database
+# 2 - DDL COURSE(Data Definition Language) 
 
 <!-- ABOUT THE PROJECT -->
 ### About The Project
 
 Here you can find the script with all commands that you need to create the schema we created at the last step. Use the `README.md` to get started.
 
-### Oracle Database Versions
-
-- [1] Oracle 19c, version 19c
-  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
