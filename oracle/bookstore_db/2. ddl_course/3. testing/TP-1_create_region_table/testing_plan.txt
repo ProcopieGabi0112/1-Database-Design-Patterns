@@ -1,0 +1,16 @@
+----------
+--Task_1-- "create_region_table"
+----------
+PLAN TESTARE
+1. verificare existenta tabela;
+2. verificare structura tabela;
+3. verificare comentarii coloane adaugate;
+4. verificare constrangeri adaugate pe coloane;
+5. verificare trigger pentru update
+   5.1. inserare in tabela o inregistrare;
+   5.2. realizeaza un update pe inregistrarea respectiva;
+   5.3. verifica daca valoarea de pe update_date a fost modificata;
+6. verifica daca fluxul realizat de trigger este in regula;
+   6.1. dau truncate la tabela ca sa elimin inregistrarile din tabela
+   6.2. insereaza 5 inregistrari in tabel folosind doar coloana region_name;
+   6.3. verifica daca pe coloana region_id sunt valori de la 1 la 5
